@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="...">
+      <meta name="keywords" content="...">
+      <meta name='copyright' content="...">
+      <meta name="author" content="...">
+
+      <!-- Facebook Open Graph -->
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="...">
+      <meta property="og:title" content="...">
+      <meta property="og:image" content="...">
+      <meta property="og:description" content="...">
+      <meta property="og:site_name" content="...">
+      <meta property="og:locale" content="en">
+
+      <!-- Twitter Card -->
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="...">
+      <meta name="twitter:creator" content="...">
+      <meta name="twitter:url" content="...">
+      <meta name="twitter:title" content="...">
+      <meta name="twitter:description" content="...">
+      <meta name="twitter:image" content="...">
+      <title>Air Transfer / Home</title>
+      <!-- For development environment -->
+      <!-- <meta http-equiv='Cache-Control' content='no-cache'> -->
+      <!-- Favicon -->
+      <link rel="icon" href="#" type="image/gif" sizes="16x16">
+      <!-- Bootstrap 3 -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+      <!-- Datepicker -->
+      <link rel="stylesheet" href="assets/css/datepicker.min.css">
+      <!-- Main Css stylesheet -->
+      <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid navbar-items_all">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo.png" alt="logo">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="fas fa-phone-alt"></span>*2000</a></li>
+              <li><a href="#">Fleet</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">USD <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">AZN</a></li>
+                  <li><a href="#">AZN</a></li>
+                  <li><a href="#">AZN</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">ENG <span class="caret"></span></a>
+                <ul class="select_dropdown dropdown-menu lang">
+                  <li><a href="#">RU</a></li>
+                  <li><a href="#">AZE</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>              
+    </header>
+    <!-- Home Page section -->
+    <section id="home_page">
+      <div class="tab">
+        <div class="tab-all">
+          <div class="tab-pills">
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#home">One way</a></li>
+              <li><a data-toggle="tab" href="#menu1">Hourly</a></li>
+            </ul>
+          </div>
+          <div class="tab-content">
+            <!-- Tab -->
+            <div id="home" class="tab-pane fade in active">
+              <div class="form-group group_input">
+                <input type="hidden" class="name">
+                <input type="hidden" class="lat">
+                <input type="hidden" class="lng">
+                <input type="text" data-selected="" value="" class="form-control select_input places_input one_way_from_place" placeholder="From" name="">
+                <span class="fas fa-map-marker-alt input-icon"></span>
+              </div>
+              <div class="exc-icon">
+                <span class="fas fa-exchange-alt"></span>
+              </div>
+              <div class="form-group group_input">
+                  <input type="hidden" class="name">
+                  <input type="hidden" class="lat">
+                  <input type="hidden" class="lng">
+                  <input type="text" data-selected="" value="" class="form-control select_input places_input one_way_to_place" placeholder="To" name="">
+                  <span class="fas fa-map-marker-alt input-icon"></span>
+                </div>
+              <div class="form-group date__input-box">
+                <input type="text" class="form-control date-input datepicker-here" data-position="bottom center" placeholder="Date" name="">
+                <span class="far fa-calendar-alt input-icon"></span>
+              </div>
+              <div class="form-group time__input-box">
+                <input type="text" class="form-control custom-select select-time_input" data-selected="" value="" placeholder="Time" name="">
+                <span class="far fa-clock input-icon"></span>
+                <ul class="select_dropdown select__time-dropdown">
+                  <li data-value="1">
+                    <a href="#">
+                      <span>12:00 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="2">
+                    <a href="#">
+                      <span>12:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="3">
+                    <a href="#">
+                      <span>12:30 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="4">
+                    <a href="#"><span>12:45 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="5">
+                    <a href="#"><span>1:00 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-footer">
+                <a href="#" class="tab__search-btn">Search</a>
+              </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div id="menu1" class="tab-pane fade">
+              <div class="form-group group_input">
+                  <div class="form-group group_input">
+                      <input type="hidden" class="name">
+                      <input type="hidden" class="lat">
+                      <input type="hidden" class="lng">
+                      <input type="text" data-selected="" value="" class="form-control select_input places_input hourly_to_place" placeholder="To" name="">
+                      <span class="fas fa-map-marker-alt input-icon"></span>
+                    </div>
+                <div class="exc-icon">
+                  <span class="fas fa-exchange-alt"></span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control custom-select select-hours_input" placeholder="1 hour" name="">
+                  <span class="fas fa-stopwatch input-icon"></span>
+                  <ul class="select_dropdown select__hours-dropdown">
+                    <li data-value="1">
+                      <a href="#">
+                        <span>1 hours</span>
+                      </a>
+                    </li>
+                    <li data-value="2">
+                      <a href="#">
+                        <span>2 hours</span>
+                      </a>
+                    </li>
+                    <li data-value="3">
+                      <a href="#">
+                        <span>3 hours</span>
+                      </a>
+                    </li>
+                    <li data-value="4">
+                      <a href="#">
+                        <span>4 hours</span>
+                      </a>
+                    </li>
+                    <li data-value="6">
+                      <a href="#">
+                        <span>5 hours</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="form-group date__input-box">
+                  <input type="text" class="form-control date-input datepicker-here" data-position="bottom center" placeholder="Date" name="">
+                  <span class="far fa-calendar-alt input-icon"></span>
+                </div>
+              <div class="form-group time__input-box">
+                <input type="text" class="form-control custom-select select-time_input_second" data-selected="" value="" placeholder="Time" name="">
+                <span class="far fa-clock input-icon"></span>
+                <ul class="select_dropdown select__time-dropdown_second">
+                  <li data-value="1">
+                    <a href="#">
+                      <span>12:00 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="2">
+                    <a href="#">
+                      <span>12:15 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="3">
+                    <a href="#">
+                      <span>12:30 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="4">
+                    <a href="#"><span>12:45 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="5">
+                    <a href="#"><span>1:00 AM</span>
+                    </a>
+                  </li>
+                  <li data-value="6">
+                    <a href="#"><span>1:15 AM</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-footer tb_ftr_scnd">
+                <a href="#" class="tab__search-btn">Search</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Home Page -->
+
+    <!-- Advantage Section -->
+    <section id="advantage">
+      <div class="container-fluid">
+        <h2 class="advantage-page_caption">WHY CHOOSE US?</h2>
+        <div class="row">
+          <div class="advantages-wrapper">
+            <div class="col-md-2 col-sm-6 col-xs-12">
+              <div class="advantage_box-full">
+                <div class="advantage-box__header">
+                  <div class="advantage-box__image">
+                    <img src="assets/images/adv_photo_1.png" alt="photo">
+                  </div>
+                </div>
+                <div class="advantage-box__main">
+                  <h4 class="advantage-box_caption">Lorem Ipsum 1</h4>
+                  <p class="advantage-box_paragraph"> Hava limanında sərnişin adlı lövhə ilə qarşılanması</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+              <div class="advantage_box-full">
+                <div class="advantage-box__header">
+                  <div class="advantage-box__image">
+                    <img src="assets/images/adv_photo_2.png" alt="photo">
+                  </div>
+                </div>
+                <div class="advantage-box__main">
+                  <h4 class="advantage-box_caption">Lorem Ipsum 1</h4>
+                  <p class="advantage-box_paragraph">Seçilən vaxta 24 saat qalmış sifarişi ödənişsiz ləğv etmək olur</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+              <div class="advantage_box-full">
+                <div class="advantage-box__header">
+                  <div class="advantage-box__image">
+                    <img src="assets/images/adv_photo_3.png" alt="photo">
+                  </div>
+                </div>
+                <div class="advantage-box__main">
+                  <h4 class="advantage-box_caption">Lorem Ipsum 1</h4>
+                  <p class="advantage-box_paragraph">Vahid korporativ geyim standartı</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+              <div class="advantage_box-full">
+                <div class="advantage-box__header">
+                  <div class="advantage-box__image">
+                    <img src="assets/images/adv_photo_4.png" alt="photo">
+                  </div>
+                </div>
+                <div class="advantage-box__main">
+                  <h4 class="advantage-box_caption">Lorem Ipsum 1</h4>
+                  <p class="advantage-box_paragraph">Sərnişinlərin şirkət tərəfindən sığortalanması</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+              <div class="advantage_box-full">
+                <div class="advantage-box__header">
+                  <div class="advantage-box__image">
+                    <img src="assets/images/adv_photo_5.png" alt="photo">
+                  </div>
+                </div>
+                <div class="advantage-box__main">
+                  <h4 class="advantage-box_caption">Lorem Ipsum 1</h4>
+                  <p class="advantage-box_paragraph">Gecikən reyslərə pulsuz 60 dəqiqə gözləmə imkanı</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-xs-12">
+              <div class="advantage_box-full">
+                <div class="advantage-box__header">
+                  <div class="advantage-box__image">
+                    <img src="assets/images/adv_photo_6.png" alt="photo">
+                  </div>
+                </div>
+                <div class="advantage-box__main">
+                  <h4 class="advantage-box_caption">Lorem Ipsum 1</h4>
+                  <p class="advantage-box_paragraph">Pulsuz uşaq oturacağı </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Choose Us section -->
+    <section id="app-section">
+      <a href="#">     
+        <div class="app_page-div">
+          <span>Download</span>
+          <p>our mobile app</p>
+        </div>
+      </a>        
+      <div class="wrapper-phone_img">
+        <div class="ios-p_market_photo">
+          <a href="#">
+            <img src="assets/images/ios_market-photo.png" alt="ios">
+          </a>
+        </div>
+        <div class="ios-p_market_photo">
+          <a href="#">
+            <img src="assets/images/play_market-photo.png" alt="android">
+          </a>
+        </div>
+      </div>
+      <div class="mobile_photo">
+        <img src="assets/images/phone.png" alt="phone">
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4 footer_header">
+            <div class="footer_logo">
+              <img src="assets/images/footer_logo.png" alt="logo">
+            </div>
+            <div class="social_footer-">
+              <div class="social_img">
+                <a href="#">
+                  <img src="assets/images/social_linkdn.png" alt="linkedn">
+                </a>
+              </div>
+              <div class="social_img">
+                <a href="#">
+                  <img src="assets/images/social_fb.png" alt="facebook">
+                </a>
+              </div>
+              <div class="social_img">
+                <a href="#">
+                  <img src="assets/images/social_insta.png" alt="instagram">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8 right_side_footer-ul">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-6">
+                <ul class="footer_ul">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">F.A.Q</a></li>
+                  <li><a href="#">How it works</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-6">
+                <ul class="footer_ul">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">F.A.Q</a></li>
+                  <li><a href="#">How it works</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <ul class="footer_ul">
+                  <li><a href="#">Ahmad Rajabli 18/3</a></li>
+                  <li><a href="#">Baku, Azerbaijan</a></li>
+                  <li><a href="#">+994 12 5651121</a></li>
+                  <li><a href="#">info@airtransfer.az</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--Jquery 3 -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap JS --> 
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- HTML 5 Shiv -->
+    <script src="assets/js/html5shiv.min.js"></script>
+    <!-- FA 5 -->
+    <script src="https://kit.fontawesome.com/cafda3fa8d.js"></script>
+    <!-- Datepicker -->
+    <script src="assets/js/datepicker.js"></script>
+    <!-- Main Javascript file -->
+    <script src="assets/js/mainscript.js"></script>
+    <script>
+      function initialize() {
+        var inputs = document.getElementsByClassName('places_input');
+
+        var autocompletes = [];
+
+        var options = {
+          componentRestrictions: {country: "az"}
+        };
+
+        for (let i = 0; i < inputs.length; i++) {
+          let autocomplete = new google.maps.places.Autocomplete(inputs[i], options);
+          let temp = inputs[i];
+          autocompletes.push(autocomplete);
+          
+          google.maps.event.addListener(autocomplete, 'place_changed', function() {
+            selectDest(autocomplete.getPlace(), temp);
+          });
+        }
+        }
+
+        function selectDest(data, temp) {
+          let name = data.formatted_address;
+          let lat = data.geometry.location.lat();
+          let lng = data.geometry.location.lng();
+          console.log(name, lat, lng);
+          if ($(temp).hasClass('one_way_from_place')) {
+            if ($('.one_from_name')) {
+              $('.one_from_name').remove();
+              $('.one_from_lat').remove();
+              $('.one_from_lng').remove();
+            }
+            $('body').append('<input class="one_from_name" type="hidden" value="' + name + '"><input class="one_from_lat" type="hidden" value="' + lat + '"><input class="one_from_lng" type="hidden" value="' + lng + '">"');
+          } else if ($(temp).hasClass('one_way_to_place')) {
+            if ($('.one_to_name')) {
+              $('.one_to_name').remove();
+              $('.one_to_to_lat').remove();
+              $('.one_to_to_lng').remove();
+            }
+            $('body').append('<input class="one_to_name" type="hidden" value="' + name + '"><input class="one_to_to_lat" type="hidden" value="' + lat + '"><input class="one_to_to_lng" type="hidden" value="' + lng + '">"');
+          } else if ($(temp).hasClass('hourly_to_place')) {
+            if ($('.hourly_to_name')) {
+              $('.hourly_to_name').remove();
+              $('.hourly_to_lat').remove();
+              $('.hourly_to_lng').remove();
+            }
+            $('body').append('<input class="hourly_to_name" type="hidden" value="' + name + '"><input class="hourly_to_lat" type="hidden" value="' + lat + '"><input class="hourly_to_lng" type="hidden" value="' + lng + '">"');
+          }
+
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjGL2hF5MTFRpgJ1DwFxJdcWtot7Ubz9I&libraries=places&callback=initialize"
+    async defer></script>
+  </body>
+</html>
